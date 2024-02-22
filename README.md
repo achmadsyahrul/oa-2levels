@@ -14,7 +14,15 @@ print(OA)
 ```
 
 ## Result
-Example with D=3, we can denote it as L<sub>4</sub>(2<sup>3</sup>).
+Example with D=3, we can get result:
+``` bash
+[[1 1 1]
+ [1 2 2]
+ [2 1 2]
+ [2 2 1]]
+```
+
+We can denote it as L<sub>4</sub>(2<sup>3</sup>).
 
 ![L4](images/l4.gif)
 
