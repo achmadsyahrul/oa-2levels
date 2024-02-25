@@ -4,7 +4,7 @@ from oa.oa_2levels import construct_OA
 def sphere_function(x):
     return sum(x_i ** 2 for x_i in x)
 
-def evaluate_OED(OA, Pi, Pn, sphere_func):
+def evaluate_oed(sphere_func):
     min_val = float('inf')
     max_val = float('-inf')
     min_combination = None
@@ -45,7 +45,7 @@ Pi = np.array([0, 2, 5])  # Level 1 combinations
 Pn = np.array([5, 0, 1])  # Level 2 combinations
 
 OA = construct_OA(D)
-best_min_combination, min_val, best_max_combination, max_val, history = evaluate_OED(OA, Pi, Pn, sphere_function)
+best_min_combination, min_val, best_max_combination, max_val, history = evaluate_oed(sphere_function)
 
 print("Best Minimum Combination:", best_min_combination)
 print("Minimum Value:", min_val)
